@@ -15,6 +15,7 @@ const businessSchema = new mongoose.Schema({
     },
     address: { type: String, required: true },
   },
+  reviews:[{}]
 }, { timestamps: true });
 
 export const Business = mongoose.model("Business", businessSchema);

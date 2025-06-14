@@ -1,9 +1,9 @@
 import express from "express";
-import { getBusinesses, addBusiness } from "../controllers/business.controller.js";
+import { getBusinesses, getBusinessReviews } from "../controllers/business.controller.js";
 
 const router = express.Router();
 
-router.get("/", getBusinesses); 
-router.post("/", addBusiness);  
+router.get("/", getBusinesses);  
+router.get("/:id/reviews",getBusinessReviews)
 
 export default router;

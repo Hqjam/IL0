@@ -18,10 +18,10 @@ app.use(express.urlencoded({}));
 app.use(express.static('public'));
 app.use(cookiParser());
 
-app.use("/user",userRoutes)
-app.use("/admin",adminRoutes)
-app.use("/review",reviewRoutes)
-app.use("/business",businessRoutes)
+app.use("/api/user",userRoutes)
+app.use("/api/admin",adminRoutes)
+app.use("/api/review",reviewRoutes)
+app.use("/api/business",businessRoutes)
 
 
 export {app}
